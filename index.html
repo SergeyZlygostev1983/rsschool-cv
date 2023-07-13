@@ -1,9 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="icon" href="./assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./assets/js/script.js" async></script>
+  <title>cv</title>
 </head>
-<body></body>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+      </ul>
+    </nav>
+    <div class="burger"><span></span></div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="section" id="profile">
+        <h1 class="section-title">Profile</h1>
+        <img class="avatar" src="./assets/img/avatar.jpg" alt="My avatar" width="250" height="250">
+        <p class="full-name">Sergey Zlygostev</p>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-item">zlygostev.sergey1983@gmail.com</li>
+        </ul>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">Summary</h2>
+        <p>I have been working as a full stack developer for 2 years and decided to improve my knowledge of javascript.</p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">Html</li>
+          <li class="section-item">Css</li>
+          <li class="section-item">Javascript</li>
+          <li class="section-item">Git</li>
+          <li class="section-item">Figma</li>
+        </ul>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section-title">Code</h2>
+        <p>
+          <code>
+            let body = document.body;<br>
+            let burger = document.querySelector("#burger");<br>
+            let menuMobile = document.querySelector("#menuMobile");<br>
+            burger.addEventListener("click", function(e) {<br>
+            e.preventDefault();<br>
+            menuMobile.classList.toggle("open");<br>
+            burger.classList.toggle("active");<br>
+            body.classList.toggle("noscroll");<br>
+            });<br>
+          </code>
+        </p>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <p>2 years as a full stack developer. Support for projects on modx, bitrix</p>
+      </section>
+      <section class="section" id="courses">
+        <h2 class="section-title">Courses</h2>
+        <p><a href="https://htmlacademy.ru/" target="_blank">Free courses from Htmlacademy</a></p>
+        <p><a href="https://learn.javascript.ru/" target="_blank">Учебник онлайн по javascript</a></p>
+      </section>
+      <section class="section" id="english">
+        <h2 class="section-title">English</h2>
+        <p>I almost understand the whole written text, understand most of what has been said and can speak a little.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <a class="footer-github" href="https://github.com/SergeyZlygostev1983" target="_blank">My github</a>
+    <p class="footer-year">2023</p>
+    <a href="https://rs.school/js/" target="_blank">
+      <img src="./assets/img/rs_school_js.svg" width="86" height="32" alt="RS School">
+    </a>
+  </footer>
+</body>
 </html>
